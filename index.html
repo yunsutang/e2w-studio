@@ -721,19 +721,37 @@
     margin-bottom: 40px;
   }
   .backed-by-logos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 48px 64px;
-    max-width: 800px;
+    width: min(100%, 1080px);
     margin: 0 auto;
+    overflow: hidden;
+    -webkit-mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent);
+    mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent);
+  }
+  .backed-by-track {
+    display: flex;
+    width: max-content;
+    animation: logo-marquee 36s linear infinite;
+    will-change: transform;
+  }
+  .backed-by-set {
+    display: flex;
+    align-items: center;
+    gap: 64px;
+    padding-right: 64px;
   }
   .backed-by-logos a {
-    width: calc((100% - 192px) / 4);
+    width: 132px;
+    flex: 0 0 132px;
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  @keyframes logo-marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .backed-by-track { animation-play-state: paused; }
   }
   .backed-logo {
     height: 44px;
@@ -806,8 +824,12 @@
   }
   @media (max-width: 900px) {
     .backed-by { padding: 56px 24px; }
-    .backed-by-logos { gap: 32px 40px; }
-    .backed-by-logos a { width: calc((100% - 40px) / 2); }
+    .backed-by-logos {
+      -webkit-mask-image: linear-gradient(to right, transparent, #000 5%, #000 95%, transparent);
+      mask-image: linear-gradient(to right, transparent, #000 5%, #000 95%, transparent);
+    }
+    .backed-by-set { gap: 36px; padding-right: 36px; }
+    .backed-by-logos a { width: 112px; flex-basis: 112px; }
     .backed-logo { height: 32px; }
     .backed-logo-hs { height: 28px; }
     .backed-logo-bx { height: 16px; }
@@ -1363,8 +1385,10 @@
 <!-- PAST CLIENTS BACKED BY -->
 <div class="backed-by reveal">
   <p class="backed-by-label">Worked with companies and investors across portfolios of</p>
-  <div class="backed-by-logos">
-    <a href="https://www.baidu.com/" target="_blank"><img src="baidu-logo.png" alt="Baidu" class="backed-logo backed-logo-bd"></a>
+  <div class="backed-by-logos" aria-label="Selected companies and investors">
+    <div class="backed-by-track">
+      <div class="backed-by-set">
+        <a href="https://www.baidu.com/" target="_blank"><img src="baidu-logo.png" alt="Baidu" class="backed-logo backed-logo-bd"></a>
     <a href="https://www.bailliegifford.com/" target="_blank"><img src="baillie-gifford-logo-new2.png" alt="Baillie Gifford" class="backed-logo backed-logo-bg"></a>
     <a href="https://www.blackstone.com/" target="_blank"><img src="blackstone-logo-cropped.png" alt="Blackstone" class="backed-logo backed-logo-bx"></a>
     <a href="https://c.capital/" target="_blank"><img src="c-capital-logo.png?v=3" alt="C Capital" class="backed-logo backed-logo-cc"></a>
@@ -1378,6 +1402,24 @@
     <a href="https://www.yunqi.vc/en/" target="_blank"><img src="yunqi-logo.png?v=2" alt="Yunqi Partners 云启资本" class="backed-logo backed-logo-yq"></a>
     <a href="https://openai.com/" target="_blank" rel="noopener"><img src="openai-logo.svg" alt="OpenAI" class="backed-logo backed-logo-openai"></a>
     <a href="https://www.ycombinator.com/" target="_blank" rel="noopener"><img src="y-combinator-logo.svg" alt="Y Combinator" class="backed-logo backed-logo-yc"></a>
+      </div>
+      <div class="backed-by-set" aria-hidden="true">
+        <a href="https://www.baidu.com/" target="_blank"><img src="baidu-logo.png" alt="Baidu" class="backed-logo backed-logo-bd"></a>
+    <a href="https://www.bailliegifford.com/" target="_blank"><img src="baillie-gifford-logo-new2.png" alt="Baillie Gifford" class="backed-logo backed-logo-bg"></a>
+    <a href="https://www.blackstone.com/" target="_blank"><img src="blackstone-logo-cropped.png" alt="Blackstone" class="backed-logo backed-logo-bx"></a>
+    <a href="https://c.capital/" target="_blank"><img src="c-capital-logo.png?v=3" alt="C Capital" class="backed-logo backed-logo-cc"></a>
+    <a href="https://www.chalfenventures.com/" target="_blank"><img src="chalfen-ventures-logo.webp" alt="Chalfen Ventures" class="backed-logo backed-logo-cv"></a>
+    <a href="https://www.joinef.com/" target="_blank"><img src="ef-logo.png" alt="Entrepreneurs First" class="backed-logo backed-logo-ef"></a>
+    <a href="https://www.hsgcap.com/" target="_blank"><img src="hs-logo.png" alt="HongShan" class="backed-logo backed-logo-hs"></a>
+    <a href="https://www.kkr.com/" target="_blank"><img src="kkr-logo.png" alt="KKR" class="backed-logo backed-logo-kkr"></a>
+    <a href="https://www.primavera-capital.com/" target="_blank"><img src="primavera-logo.png" alt="Primavera Capital 春华资本" class="backed-logo backed-logo-pv"></a>
+    <a href="https://www.tencent.com/" target="_blank"><img src="tencent-logo.png" alt="Tencent" class="backed-logo backed-logo-tc"></a>
+    <a href="http://www.unityvc.com/en.html" target="_blank"><img src="jiuhe-logo.png" alt="Unity Ventures 九合创投" class="backed-logo backed-logo-jh"></a>
+    <a href="https://www.yunqi.vc/en/" target="_blank"><img src="yunqi-logo.png?v=2" alt="Yunqi Partners 云启资本" class="backed-logo backed-logo-yq"></a>
+    <a href="https://openai.com/" target="_blank" rel="noopener"><img src="openai-logo.svg" alt="OpenAI" class="backed-logo backed-logo-openai"></a>
+    <a href="https://www.ycombinator.com/" target="_blank" rel="noopener"><img src="y-combinator-logo.svg" alt="Y Combinator" class="backed-logo backed-logo-yc"></a>
+      </div>
+    </div>
   </div>
 </div>
 
