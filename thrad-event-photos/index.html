@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Thrad event photos</title>
+  <style>
+    :root { color-scheme: light; --ink: #17140f; --muted: #6f675d; --line: #e6e0d8; --accent: #e7a33e; --paper: #fbfaf8; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    main { width: min(1180px, calc(100% - 40px)); margin: 0 auto; padding: 64px 0 72px; }
+    header { display: flex; justify-content: space-between; align-items: end; gap: 24px; margin-bottom: 38px; border-bottom: 1px solid var(--line); padding-bottom: 28px; }
+    .eyebrow { margin: 0 0 12px; color: var(--accent); font-size: 12px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
+    h1 { margin: 0; font-family: Georgia, "Times New Roman", serif; font-size: clamp(38px, 6vw, 72px); font-weight: 400; letter-spacing: -.045em; line-height: .95; }
+    .intro { max-width: 350px; margin: 0; color: var(--muted); font-size: 15px; line-height: 1.55; }
+    .grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
+    figure { margin: 0; }
+    .photo { overflow: hidden; background: #eee9e2; aspect-ratio: 4 / 3; }
+    .photo img { display: block; width: 100%; height: 100%; object-fit: cover; transition: transform .35s ease; }
+    figure:hover img { transform: scale(1.025); }
+    figcaption { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 13px 0 0; }
+    .name { color: var(--muted); font-size: 13px; }
+    a.download { flex: none; color: var(--ink); font-size: 12px; font-weight: 700; text-decoration: none; border-bottom: 1px solid var(--accent); padding-bottom: 2px; }
+    a.download:hover { color: #9b641f; }
+    footer { margin-top: 42px; color: var(--muted); font-size: 12px; }
+    @media (max-width: 760px) { main { width: min(100% - 28px, 560px); padding-top: 36px; } header { display: block; } .intro { margin-top: 20px; max-width: 500px; } .grid { grid-template-columns: 1fr; gap: 30px; } }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div>
+        <p class="eyebrow">Thrad</p>
+        <h1>Event photos</h1>
+      </div>
+      <p class="intro">Watermarked photos from the event. Open any image or use its download link to save the original file.</p>
+    </header>
+
+    <section class="grid" aria-label="Event photos">
+      <figure><a class="photo" href="01_people-in-a-room.jpg"><img src="01_people-in-a-room.jpg" alt="People gathered in a room" loading="eager"></a><figcaption><span class="name">01 · People in a room</span><a class="download" href="01_people-in-a-room.jpg" download>Download</a></figcaption></figure>
+      <figure><a class="photo" href="02_person-with-smartphone.jpg"><img src="02_person-with-smartphone.jpg" alt="Person using a smartphone" loading="lazy"></a><figcaption><span class="name">02 · Person with smartphone</span><a class="download" href="02_person-with-smartphone.jpg" download>Download</a></figcaption></figure>
+      <figure><a class="photo" href="03_office-warming.jpg"><img src="03_office-warming.jpg" alt="People at an office gathering" loading="lazy"></a><figcaption><span class="name">03 · Office warming</span><a class="download" href="03_office-warming.jpg" download>Download</a></figcaption></figure>
+      <figure><a class="photo" href="04_people-conversing-indoors.jpg"><img src="04_people-conversing-indoors.jpg" alt="People conversing indoors" loading="lazy"></a><figcaption><span class="name">04 · People conversing indoors</span><a class="download" href="04_people-conversing-indoors.jpg" download>Download</a></figcaption></figure>
+      <figure><a class="photo" href="05_young-men-laughing.jpg"><img src="05_young-men-laughing.jpg" alt="Two people laughing" loading="lazy"></a><figcaption><span class="name">05 · Young men laughing</span><a class="download" href="05_young-men-laughing.jpg" download>Download</a></figcaption></figure>
+      <figure><a class="photo" href="06_person-with-green-wall.jpg"><img src="06_person-with-green-wall.jpg" alt="Person beside a green wall" loading="lazy"></a><figcaption><span class="name">06 · Person with green wall</span><a class="download" href="06_person-with-green-wall.jpg" download>Download</a></figcaption></figure>
+      <figure><a class="photo" href="07_modern-office-space.jpg"><img src="07_modern-office-space.jpg" alt="Modern office space" loading="lazy"></a><figcaption><span class="name">07 · Modern office space</span><a class="download" href="07_modern-office-space.jpg" download>Download</a></figcaption></figure>
+      <figure><a class="photo" href="08_person-in-green-room.jpg"><img src="08_person-in-green-room.jpg" alt="Person in a green room" loading="lazy"></a><figcaption><span class="name">08 · Person in green room</span><a class="download" href="08_person-in-green-room.jpg" download>Download</a></figcaption></figure>
+      <figure><a class="photo" href="09_group-of-people.jpg"><img src="09_group-of-people.jpg" alt="Group of people together" loading="lazy"></a><figcaption><span class="name">09 · Group of people</span><a class="download" href="09_group-of-people.jpg" download>Download</a></figcaption></figure>
+      <figure><a class="photo" href="10_indoor-group-gathering.jpg"><img src="10_indoor-group-gathering.jpg" alt="Indoor group gathering" loading="lazy"></a><figcaption><span class="name">10 · Indoor group gathering</span><a class="download" href="10_indoor-group-gathering.jpg" download>Download</a></figcaption></figure>
+      <figure><a class="photo" href="11_indoor-gathering-space.jpg"><img src="11_indoor-gathering-space.jpg" alt="Indoor gathering space" loading="lazy"></a><figcaption><span class="name">11 · Indoor gathering space</span><a class="download" href="11_indoor-gathering-space.jpg" download>Download</a></figcaption></figure>
+    </section>
+    <footer>11 watermarked photos · Public link · Downloads are enabled per image</footer>
+  </main>
+</body>
+</html>
