@@ -13,7 +13,6 @@
     header { display: flex; justify-content: space-between; align-items: end; gap: 24px; margin-bottom: 38px; border-bottom: 1px solid var(--line); padding-bottom: 28px; }
     .eyebrow { margin: 0 0 12px; color: var(--accent); font-size: 12px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
     h1 { margin: 0; font-family: Georgia, "Times New Roman", serif; font-size: clamp(38px, 6vw, 72px); font-weight: 400; letter-spacing: -.045em; line-height: .95; }
-    .intro { max-width: 350px; margin: 0; color: var(--muted); font-size: 15px; line-height: 1.55; }
     .grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
     figure { margin: 0; }
     .photo { display: block; overflow: hidden; background: #eee9e2; aspect-ratio: 4 / 3; }
@@ -23,8 +22,7 @@
     .name { color: var(--muted); font-size: 13px; }
     a.download { flex: none; color: var(--ink); font-size: 12px; font-weight: 700; text-decoration: none; border-bottom: 1px solid var(--accent); padding-bottom: 2px; }
     a.download:hover { color: #9b641f; }
-    footer { margin-top: 42px; color: var(--muted); font-size: 12px; }
-    @media (max-width: 760px) { main { width: min(100% - 28px, 560px); padding-top: 36px; } header { display: block; } .intro { margin-top: 20px; max-width: 500px; } .grid { grid-template-columns: 1fr; gap: 30px; } }
+    @media (max-width: 760px) { main { width: min(100% - 28px, 560px); padding-top: 36px; } header { display: block; } .grid { grid-template-columns: 1fr; gap: 30px; } }
   </style>
 </head>
 <body>
@@ -34,7 +32,6 @@
         <p class="eyebrow">Thrad</p>
         <h1>Event photos</h1>
       </div>
-      <p class="intro">Watermarked photos from the event. Open any image or use its download link to save the original file.</p>
     </header>
 
     <section class="grid" aria-label="Event photos">
@@ -50,7 +47,6 @@
       <figure><a class="photo" href="/thrad-event-photos/10_indoor-group-gathering.jpg"><img src="/thrad-event-photos/10_indoor-group-gathering.jpg" alt="Indoor group gathering" loading="lazy"></a><figcaption><span class="name">10 · Indoor group gathering</span><a class="download" href="/thrad-event-photos/10_indoor-group-gathering.jpg" download>Download</a></figcaption></figure>
       <figure><a class="photo" href="/thrad-event-photos/11_indoor-gathering-space.jpg"><img src="/thrad-event-photos/11_indoor-gathering-space.jpg" alt="Indoor gathering space" loading="lazy"></a><figcaption><span class="name">11 · Indoor gathering space</span><a class="download" href="/thrad-event-photos/11_indoor-gathering-space.jpg" download>Download</a></figcaption></figure>
     </section>
-    <footer>11 watermarked photos · Public link · Downloads are enabled per image</footer>
   </main>
 </body>
 </html>
