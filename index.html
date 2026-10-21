@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>e2w studio - AI-native growth marketing studio for VC-backed companies</title>
+<title>e2w studio - Growth for ambitious companies that need distribution</title>
 <script>document.documentElement.classList.add('js');</script>
 <link rel="icon" type="image/x-icon" href="/favicon.ico">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -740,18 +740,34 @@
     padding-right: 64px;
   }
   .backed-by-logos a {
-    width: 132px;
-    flex: 0 0 132px;
+    width: 170px;
+    flex: 0 0 170px;
     display: flex;
     justify-content: center;
     align-items: center;
   }
+  .client-logo {
+    width: 170px;
+    height: 44px;
+    object-fit: contain;
+    filter: grayscale(1) opacity(0.7);
+    transition: filter 0.3s;
+  }
+  .client-logo--60x {
+    width: 55px;
+  }
+  .client-logo--thrad {
+    width: 120px;
+  }
+  .client-logo--tracelight {
+    width: 140px;
+  }
+  .backed-by-logos a:hover .client-logo {
+    filter: grayscale(0) opacity(1);
+  }
   @keyframes logo-marquee {
     from { transform: translateX(0); }
     to { transform: translateX(-50%); }
-  }
-  @media (prefers-reduced-motion: reduce) {
-    .backed-by-track { animation-play-state: paused; }
   }
   .backed-logo {
     height: 44px;
@@ -828,8 +844,12 @@
       -webkit-mask-image: linear-gradient(to right, transparent, #000 5%, #000 95%, transparent);
       mask-image: linear-gradient(to right, transparent, #000 5%, #000 95%, transparent);
     }
-    .backed-by-set { gap: 36px; padding-right: 36px; }
-    .backed-by-logos a { width: 112px; flex-basis: 112px; }
+    .backed-by-set { gap: 24px; padding-right: 24px; }
+    .backed-by-logos a { width: 140px; flex-basis: 140px; }
+    .client-logo { width: 140px; height: 36px; }
+    .client-logo--60x { width: 48px; }
+    .client-logo--thrad { width: 96px; }
+    .client-logo--tracelight { width: 110px; }
     .backed-logo { height: 32px; }
     .backed-logo-hs { height: 28px; }
     .backed-logo-bx { height: 16px; }
@@ -1322,6 +1342,7 @@
 </style>
 <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
 <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+<script>!function(key) {if (window.reb2b) return;window.reb2b = {loaded: true};var s = document.createElement("script");s.async = true;s.src = "https://ddwl4m2hdecbv.cloudfront.net/b/" + key + "/" + key + ".js.gz";document.getElementsByTagName("script")[0].parentNode.insertBefore(s, document.getElementsByTagName("script")[0]);}("EN4M0HJXEMOM");</script>
 </head>
 <body>
 
@@ -1334,7 +1355,6 @@
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
     <li><a href="#work">Work</a></li>
-    <li><a href="#newsletter">Writing</a></li>
     <li><a href="https://lu.ma/e2w" target="_blank" class="nav-community">Community</a></li>
     <li><a href="#" onclick="Calendly.initPopupWidget({url:'https://calendly.com/yunsu-tang/15-minute-meeting'});return false;" class="nav-cta">Book a Call</a></li>
   </ul>
@@ -1345,7 +1365,6 @@
 <div class="mobile-menu" id="mobile-menu">
   <a href="#about" class="mobile-nav-link">About</a>
   <a href="#work" class="mobile-nav-link">Work</a>
-  <a href="#newsletter" class="mobile-nav-link">Writing</a>
   <div class="mobile-cta-group">
     <a href="https://lu.ma/e2w" target="_blank" class="mobile-cta-community">Community</a>
     <a href="#" onclick="Calendly.initPopupWidget({url:'https://calendly.com/yunsu-tang/15-minute-meeting'});return false;" class="mobile-cta-book">Book a Call</a>
@@ -1360,11 +1379,10 @@
       marketing studio
     </h1>
     <p class="hero-desc">
-      We help VC-backed AI companies turn attention into qualified pipeline through founder-led content, demand generation, community, and growth.
+      We turn founder expertise into attention, demand, and qualified pipeline through founder-led content, GTM experiments, and community.
     </p>
     <div class="hero-actions">
       <a href="#work" class="btn-primary">Our Work</a>
-      <a href="#newsletter" class="btn-text">Read the Writing</a>
     </div>
   </div>
   <div class="hero-right">
@@ -1384,34 +1402,24 @@
 
 <!-- PAST CLIENTS BACKED BY -->
 <div class="backed-by reveal">
-  <p class="backed-by-label">For ambitious companies building what’s next</p>
-  <div class="backed-by-logos" aria-label="Selected companies and investors">
+  <p class="backed-by-label">Past and current clients</p>
+  <div class="backed-by-logos" aria-label="Past and current clients">
     <div class="backed-by-track">
       <div class="backed-by-set">
-                <a href="https://openai.com/" target="_blank" rel="noopener"><img src="openai-logo.svg" alt="OpenAI" class="backed-logo backed-logo-openai"></a>
-        <a href="https://www.ycombinator.com/" target="_blank" rel="noopener"><img src="y-combinator-logo.svg" alt="Y Combinator" class="backed-logo backed-logo-yc"></a>
-        <a href="https://www.joinef.com/" target="_blank"><img src="ef-logo.png" alt="Entrepreneurs First" class="backed-logo backed-logo-ef"></a>
-        <a href="https://www.baidu.com/" target="_blank"><img src="baidu-logo.png" alt="Baidu" class="backed-logo backed-logo-bd"></a>
-        <a href="https://www.tencent.com/" target="_blank"><img src="tencent-logo.png" alt="Tencent" class="backed-logo backed-logo-tc"></a>
-        <a href="https://www.kkr.com/" target="_blank"><img src="kkr-logo.png" alt="KKR" class="backed-logo backed-logo-kkr"></a>
-        <a href="https://www.blackstone.com/" target="_blank"><img src="blackstone-logo-cropped.png" alt="Blackstone" class="backed-logo backed-logo-bx"></a>
-        <a href="https://www.bailliegifford.com/" target="_blank"><img src="baillie-gifford-logo-new2.png" alt="Baillie Gifford" class="backed-logo backed-logo-bg"></a>
-        <a href="https://www.hsgcap.com/" target="_blank"><img src="hs-logo.png" alt="HongShan" class="backed-logo backed-logo-hs"></a>
-        <a href="https://c.capital/" target="_blank"><img src="c-capital-logo.png?v=3" alt="C Capital" class="backed-logo backed-logo-cc"></a>
-        <a href="https://www.primavera-capital.com/" target="_blank"><img src="primavera-logo.png" alt="Primavera Capital 春华资本" class="backed-logo backed-logo-pv"></a>
+        <a href="https://www.60x.ai/" target="_blank" rel="noopener"><img src="assets/clients/60x-official-wordmark.svg" alt="60x" class="client-logo client-logo--60x"></a>
+        <a href="https://happycapy.ai/" target="_blank" rel="noopener"><img src="assets/clients/happycapy-official-wordmark.svg" alt="Happycapy" class="client-logo"></a>
+        <a href="https://movablevoice.com/" target="_blank" rel="noopener"><img src="assets/clients/movablevoice-official-wordmark.svg" alt="Movable Voice" class="client-logo"></a>
+        <a href="https://deploy.co/" target="_blank" rel="noopener"><img src="assets/clients/deploy-official-wordmark.svg" alt="OpenAI Deploy Co." class="client-logo"></a>
+        <a href="http://thrad.ai/" target="_blank" rel="noopener"><img src="assets/clients/thrad-official-wordmark.svg" alt="Thrad" class="client-logo client-logo--thrad"></a>
+        <a href="https://tracelight.ai/" target="_blank" rel="noopener"><img src="assets/clients/tracelight-official-wordmark.svg" alt="Tracelight" class="client-logo client-logo--tracelight"></a>
       </div>
       <div class="backed-by-set" aria-hidden="true">
-                <a href="https://openai.com/" target="_blank" rel="noopener"><img src="openai-logo.svg" alt="OpenAI" class="backed-logo backed-logo-openai"></a>
-        <a href="https://www.ycombinator.com/" target="_blank" rel="noopener"><img src="y-combinator-logo.svg" alt="Y Combinator" class="backed-logo backed-logo-yc"></a>
-        <a href="https://www.joinef.com/" target="_blank"><img src="ef-logo.png" alt="Entrepreneurs First" class="backed-logo backed-logo-ef"></a>
-        <a href="https://www.baidu.com/" target="_blank"><img src="baidu-logo.png" alt="Baidu" class="backed-logo backed-logo-bd"></a>
-        <a href="https://www.tencent.com/" target="_blank"><img src="tencent-logo.png" alt="Tencent" class="backed-logo backed-logo-tc"></a>
-        <a href="https://www.kkr.com/" target="_blank"><img src="kkr-logo.png" alt="KKR" class="backed-logo backed-logo-kkr"></a>
-        <a href="https://www.blackstone.com/" target="_blank"><img src="blackstone-logo-cropped.png" alt="Blackstone" class="backed-logo backed-logo-bx"></a>
-        <a href="https://www.bailliegifford.com/" target="_blank"><img src="baillie-gifford-logo-new2.png" alt="Baillie Gifford" class="backed-logo backed-logo-bg"></a>
-        <a href="https://www.hsgcap.com/" target="_blank"><img src="hs-logo.png" alt="HongShan" class="backed-logo backed-logo-hs"></a>
-        <a href="https://c.capital/" target="_blank"><img src="c-capital-logo.png?v=3" alt="C Capital" class="backed-logo backed-logo-cc"></a>
-        <a href="https://www.primavera-capital.com/" target="_blank"><img src="primavera-logo.png" alt="Primavera Capital 春华资本" class="backed-logo backed-logo-pv"></a>
+        <a href="https://www.60x.ai/" tabindex="-1"><img src="assets/clients/60x-official-wordmark.svg" alt="" class="client-logo client-logo--60x"></a>
+        <a href="https://happycapy.ai/" tabindex="-1"><img src="assets/clients/happycapy-official-wordmark.svg" alt="" class="client-logo"></a>
+        <a href="https://movablevoice.com/" tabindex="-1"><img src="assets/clients/movablevoice-official-wordmark.svg" alt="" class="client-logo"></a>
+        <a href="https://deploy.co/" tabindex="-1"><img src="assets/clients/deploy-official-wordmark.svg" alt="" class="client-logo"></a>
+        <a href="http://thrad.ai/" tabindex="-1"><img src="assets/clients/thrad-official-wordmark.svg" alt="" class="client-logo client-logo--thrad"></a>
+        <a href="https://tracelight.ai/" tabindex="-1"><img src="assets/clients/tracelight-official-wordmark.svg" alt="" class="client-logo client-logo--tracelight"></a>
       </div>
     </div>
   </div>
@@ -1422,34 +1430,34 @@
   <div class="about-section reveal">
     <div class="about-left">
       <p class="section-label">About the studio</p>
-      <h2 class="section-title">Where growth <em>meets<br>intelligence</em></h2>
+      <h2 class="section-title">Where engineering thinking <em>meets<br>distribution</em></h2>
       <div class="divider-line"></div>
       <p class="about-body">
-        e2w studio was born at a time when distribution became the moat for early-stage companies. We build e2w studio to help ambitious startups find the right channels, turn signal into growth, and develop the kind of growth instincts that compound over time.
+        Technical companies do not usually lack product depth. They lack a repeatable way to turn that depth into attention, trust, and qualified pipeline.
       </p>
       <p class="about-body">
         Founded by Yunsu Tang, a former publicist and two-time TEDx speaker, e2w draws on a career spanning early-stage ventures, global communications firms FGS Global and Edelman, and years spent navigating between Hong Kong, Shanghai, and London.
       </p>
       <p class="about-body">
-        We drive growth through founder-led content, demand generation, community, and IRL campaigns. We combine cross-cultural fluency with modern distribution to help companies turn attention into qualified pipeline.
+        e2w brings engineering thinking to distribution: focused experiments, founder-led narratives, community, and real-world campaigns.
       </p>
     </div>
     <div class="about-right">
       <div class="pillars">
         <div class="pillar reveal reveal-delay-1">
           <p class="pillar-num">01</p>
-          <h3 class="pillar-title">Viral Content</h3>
-          <p class="pillar-desc">Creating content that spreads, from founder-led narratives to platform-native campaigns designed to compound reach.</p>
+          <h3 class="pillar-title">Founder-led thought leadership</h3>
+          <p class="pillar-desc">Interviewing founders and turning their real expertise into sharp LinkedIn, newsletter, video, and launch narratives that sound like them — and give the market a reason to pay attention.</p>
         </div>
         <div class="pillar reveal reveal-delay-2">
           <p class="pillar-num">02</p>
-          <h3 class="pillar-title">Community</h3>
-          <p class="pillar-desc">Growing engaged communities around your brand and turning audiences into networks that drive word of mouth.</p>
+          <h3 class="pillar-title">GTM systems &amp; ABM</h3>
+          <p class="pillar-desc">Connecting ICP research, account signals, content, CRM workflows, and sales outreach so marketing creates better conversations — not just more activity.</p>
         </div>
         <div class="pillar reveal reveal-delay-3">
           <p class="pillar-num">03</p>
-          <h3 class="pillar-title">IRL</h3>
-          <p class="pillar-desc">Bridging East and West through real-world activations, hackathons, meetups, and events that bring people together.</p>
+          <h3 class="pillar-title">Campaigns &amp; real-world distribution</h3>
+          <p class="pillar-desc">Designing launches, PR moments, events, and targeted activations that put ambitious companies in the right rooms and turn attention into high-intent pipeline.</p>
         </div>
       </div>
     </div>
@@ -1510,32 +1518,6 @@
   </div>
 </div>
 
-<!-- WRITING -->
-<section class="writing-section" id="newsletter">
-  <div class="writing-header reveal" style="margin-top:80px; margin-bottom:24px;" id="writing">
-    <p class="section-label" style="margin-bottom:0;">From the archive</p>
-  </div>
-  <div class="writing-grid" id="writing-grid">
-    <a href="https://www.linkedin.com/pulse/you-met-me-very-chinese-time-my-life-yunsu-tang-dvsfe/" target="_blank" class="writing-card reveal">
-      <p class="writing-date">Feb 16, 2026</p>
-      <h3 class="writing-title">"You met me at a very Chinese time in my life."</h3>
-      <p class="writing-excerpt">"You're so white-washed." I froze. It was my birthday party. I was dressed in retro attire, and the remark caught me off guard...</p>
-    </a>
-    <a href="https://www.linkedin.com/pulse/why-asians-work-so-hard-yunsu-tang--5qsae/" target="_blank" class="writing-card reveal reveal-delay-1">
-      <p class="writing-date">May 5, 2025</p>
-      <h3 class="writing-title">Why Asians work so hard</h3>
-      <p class="writing-excerpt">"My grandmother is 92 years old. Even now, she says that if she had the chance, she would keep working..."</p>
-    </a>
-    <a href="https://www.linkedin.com/pulse/what-chinese-philosophy-can-teach-us-entrepreneurship-yunsu-tang--a7mye/" target="_blank" class="writing-card reveal reveal-delay-2">
-      <p class="writing-date">May 5, 2025</p>
-      <h3 class="writing-title">What Chinese philosophy can teach us about entrepreneurship</h3>
-      <p class="writing-excerpt">"In China, there's an unofficial but widely accepted hierarchical classification of cities. This system shapes everything from access to opportunity to social perception..."</p>
-    </a>
-  </div>
-  <div style="text-align:right; margin-top:48px;">
-    <a href="https://www.linkedin.com/newsletters/east-to-west-7325061372751265792/" target="_blank" class="writing-all-link" style="display:inline-flex;">All Essays</a>
-  </div>
-</section>
 
 <!-- CTA STRIP -->
 <div class="cta-strip reveal">
@@ -1556,21 +1538,19 @@
     <div class="footer-brand">
       <div class="logo-mark" style="margin-bottom:16px;"><img src="https://storage.res-capy.com/storage/upload/users/usr_01KJPQMF48QDRRVSF1JZ514SVS/workspaces/default-workspace/sessions/1774456152966/5e35a175-37c2-40ae-b359-63acefae3462.png" alt="e2w studio logo"></div>
       <p class="footer-brand-name">e2w studio</p>
-      <p class="footer-brand-desc">AI-native growth marketing studio for VC-backed companies bridging East and West.</p>
+      <p class="footer-brand-desc">AI-native growth marketing studio for ambitious companies.</p>
     </div>
     <div>
       <p class="footer-col-title">Navigate</p>
       <ul class="footer-links">
         <li><a href="#about">About</a></li>
         <li><a href="#work">Work</a></li>
-        <li><a href="#newsletter">Writing</a></li>
       </ul>
     </div>
     <div>
       <p class="footer-col-title">Connect</p>
       <ul class="footer-links">
         <li><a href="https://www.linkedin.com/in/yunsutang/" target="_blank">LinkedIn</a></li>
-        <li><a href="https://x.com/Yunsu_Tang" target="_blank">X</a></li>
       </ul>
     </div>
   </div>
