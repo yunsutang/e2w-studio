@@ -1341,8 +1341,18 @@
     .footer-bottom { flex-direction: column; gap: 12px; align-items: flex-start; }
   }
 </style>
-<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-<script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+<!-- Cal.com booking popup -->
+<script>
+  (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if (typeof namespace === "string") { cal.ns[namespace] = cal.ns[namespace] || api; p(cal.ns[namespace], ar); p(cal, ["initNamespace", namespace]); } else p(cal, ar); return; } p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+  Cal("init", "intro", { origin: "https://app.cal.com" });
+  Cal.ns.intro("ui", { hideEventTypeDetails: false, layout: "month_view" });
+  // Links point to cal.com as a fallback; once the embed loads, open the popup instead
+  document.querySelector('script[src="https://app.cal.com/embed/embed.js"]').addEventListener('load', () => {
+    document.addEventListener('click', (e) => {
+      if (e.target.closest('a[data-cal-link]')) e.preventDefault();
+    });
+  });
+</script>
 <script>!function(key) {if (window.reb2b) return;window.reb2b = {loaded: true};var s = document.createElement("script");s.async = true;s.src = "https://ddwl4m2hdecbv.cloudfront.net/b/" + key + "/" + key + ".js.gz";document.getElementsByTagName("script")[0].parentNode.insertBefore(s, document.getElementsByTagName("script")[0]);}("EN4M0HJXEMOM");</script>
 </head>
 <body>
@@ -1358,7 +1368,7 @@
     <li><a href="#work">Work</a></li>
     <li><a href="/e2wos" class="nav-e2wos">e2wOS</a></li>
     <li><a href="https://lu.ma/e2w" target="_blank" class="nav-community">Community</a></li>
-    <li><a href="#" onclick="Calendly.initPopupWidget({url:'https://calendly.com/yunsu-tang/15-minute-meeting'});return false;" class="nav-cta">Book a Call</a></li>
+    <li><a href="https://cal.com/yunsu/15min" data-cal-link="yunsu/15min" data-cal-namespace="intro" data-cal-config='{"layout":"month_view"}' class="nav-cta">Book a Call</a></li>
   </ul>
   <button class="nav-hamburger" id="hamburger" aria-label="Menu">
     <span></span><span></span><span></span>
@@ -1370,7 +1380,7 @@
   <a href="/e2wos" class="mobile-nav-link nav-e2wos">e2wOS</a>
   <div class="mobile-cta-group">
     <a href="https://lu.ma/e2w" target="_blank" class="mobile-cta-community">Community</a>
-    <a href="#" onclick="Calendly.initPopupWidget({url:'https://calendly.com/yunsu-tang/15-minute-meeting'});return false;" class="mobile-cta-book">Book a Call</a>
+    <a href="https://cal.com/yunsu/15min" data-cal-link="yunsu/15min" data-cal-namespace="intro" data-cal-config='{"layout":"month_view"}' class="mobile-cta-book">Book a Call</a>
   </div>
 </div>
 
@@ -1529,7 +1539,7 @@
     Let's build together.
   </h2>
   <div class="cta-actions">
-    <a href="#" onclick="Calendly.initPopupWidget({url:'https://calendly.com/yunsu-tang/15-minute-meeting'});return false;" class="btn-primary">Book a Call</a>
+    <a href="https://cal.com/yunsu/15min" data-cal-link="yunsu/15min" data-cal-namespace="intro" data-cal-config='{"layout":"month_view"}' class="btn-primary">Book a Call</a>
     <a href="https://www.linkedin.com/in/yunsutang/" target="_blank" class="btn-outline">Connect on LinkedIn</a>
   </div>
 </div>
